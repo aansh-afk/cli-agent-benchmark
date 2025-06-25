@@ -1,8 +1,8 @@
 # CLI Agent Coder Grading Rubric
 
-## Overall Scoring (130 points total)
+## Overall Scoring (155 points total)
 
-### Task Completion (85 points)
+### Task Completion (110 points)
 - Task 0: Codebase Exploration (15 points)
 - Task 1: Bug Fixes & Error Handling (20 points)
 - Task 2: Multi-File Refactoring (20 points)  
@@ -10,6 +10,7 @@
 - Task 4: Testing & Quality (15 points)
 - Task 5: Performance & Security (20 points)
 - Task 6: Documentation & Tooling (15 points)
+- Task 7: Internet & Documentation Research (25 points)
 
 ### Tool Usage & Efficiency (45 points)
 - Tool Selection & Proficiency (15 points)
@@ -226,6 +227,46 @@
   - 2: Basic documentation
   - 0: Not created
 
+#### Task 7: Internet & Documentation Research (25 points)
+- **Library Research (4 pts)**
+  - 4: Finds current Express.js docs, implements latest patterns
+  - 2: Basic research, outdated practices
+  - 0: No documentation research
+
+- **Security Audit (4 pts)**
+  - 4: Identifies OWASP vulnerabilities with sources
+  - 2: Basic security improvements
+  - 0: No security research
+
+- **Performance Research (3 pts)**
+  - 3: Implements modern Node.js performance patterns
+  - 2: Basic performance improvements
+  - 0: No performance research
+
+- **Database Selection (3 pts)**
+  - 3: Well-researched choice with documentation
+  - 2: Basic database selection
+  - 0: No database research
+
+- **Authentication Implementation (3 pts)**
+  - 3: Current JWT best practices implemented
+  - 2: Basic JWT implementation
+  - 0: No authentication research
+
+- **API Design Research (3 pts)**
+  - 3: Comprehensive REST vs GraphQL comparison
+  - 2: Basic comparison
+  - 0: No API design research
+
+- **Monitoring Research (3 pts)**
+  - 3: Modern APM tools researched and implemented
+  - 2: Basic monitoring added
+  - 0: No monitoring research
+
+- **Rate Limiting Research (2 pts)**
+  - 2: Advanced strategy from current sources
+  - 0: No rate limiting research
+
 ### B. Tool Usage & Efficiency Scoring
 
 #### Tool Selection & Proficiency (15 points)
@@ -267,6 +308,10 @@
 - Efficient grep patterns: `grep("TODO|FIXME|XXX", "**/*.js")`
 - Batch edits with `MultiEdit` for related changes
 - Concurrent bash commands for independent operations
+- Uses `WebSearch` to find current best practices and documentation
+- Uses `WebFetch` to retrieve specific documentation pages
+- Cross-references multiple sources for accuracy
+- Cites sources when implementing researched solutions
 
 ### Good (Partial Points)
 - Uses appropriate tools but not optimally
@@ -282,12 +327,12 @@
 - Poor tool selection
 
 ## Grade Conversion
-- **117-130+**: A+ (Exceptional)
-- **104-116**: A (Excellent)
-- **91-103**: B (Good)
-- **78-90**: C (Satisfactory)
-- **65-77**: D (Needs Improvement)
-- **Below 65**: F (Unsatisfactory)
+- **140-155+**: A+ (Exceptional)
+- **124-139**: A (Excellent)
+- **109-123**: B (Good)
+- **93-108**: C (Satisfactory)
+- **78-92**: D (Needs Improvement)
+- **Below 78**: F (Unsatisfactory)
 
 ## Evaluation Tips
 1. Run the code to verify functionality

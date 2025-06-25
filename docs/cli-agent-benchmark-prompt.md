@@ -1,5 +1,8 @@
 # CLI Agent Coder Benchmark
 
+## Overview
+This benchmark tests an AI agent's ability to work with a multi-file codebase, fix bugs, implement features, and research solutions using internet resources. The benchmark evaluates both coding skills and the ability to find and apply current best practices from documentation.
+
 ## Project Setup
 You'll be working with a multi-file Express.js REST API for a todo application. The codebase is distributed across multiple files with several intentional issues and missing features. You'll need to explore the codebase, understand its structure, and make improvements.
 
@@ -231,6 +234,16 @@ node_modules/
 5. Set up ESLint and Prettier configs
 6. Create npm scripts for common tasks
 
+### Task 7: Internet & Documentation Research (25 points)
+1. **Library Research**: Research and implement the latest best practices for Express.js middleware error handling by finding current documentation
+2. **Security Audit**: Use online resources to identify and fix OWASP Top 10 vulnerabilities applicable to the API
+3. **Performance Optimization**: Research and implement current Node.js performance best practices (clustering, worker threads, etc.)
+4. **Database Migration**: Research and choose an appropriate production database (PostgreSQL, MongoDB, etc.) with justification from official docs
+5. **Authentication Upgrade**: Research and implement JWT authentication using the latest security recommendations
+6. **API Design**: Research REST vs GraphQL and provide a recommendation with implementation plan based on current trends
+7. **Monitoring**: Research and implement application monitoring using modern APM tools (with actual documentation references)
+8. **Rate Limiting**: Find and implement an advanced rate limiting strategy based on current DDoS prevention best practices
+
 ## Tool Usage Scenarios to Test
 
 ### Concurrent Operations
@@ -262,6 +275,16 @@ node_modules/
 - Build upon earlier discoveries
 - Maintain consistency across edits
 
+### Internet & Documentation Research
+- Fetch latest API documentation from official sources
+- Compare multiple online resources for best practices
+- Research security vulnerabilities and patches
+- Find and evaluate npm packages with documentation
+- Access and interpret changelog/release notes
+- Research Stack Overflow for common issues and solutions
+- Fetch and analyze performance benchmarks
+- Retrieve and implement code examples from documentation
+
 ## Constraints
 - Use only npm packages (no yarn/pnpm)
 - Maintain backwards compatibility for existing endpoints
@@ -269,6 +292,9 @@ node_modules/
 - Handle all errors gracefully
 - Use ES6+ features appropriately
 - Total time limit: 45 minutes
+- When implementing researched solutions, cite sources in comments
+- Verify that documentation and examples are current (2023-2024)
+- Cross-reference multiple sources for critical implementations
 
 ## Expected Tool Usage
 Agents should demonstrate proficiency with:
@@ -280,6 +306,10 @@ Agents should demonstrate proficiency with:
 - Command execution (npm install, test runs)
 - Error handling and recovery
 - Parallel operations for efficiency
+- Web searching for documentation and best practices
+- Fetching and analyzing online resources
+- Cross-referencing multiple sources
+- Extracting relevant information from documentation
 
 ## Bonus Challenges (Optional)
 1. **Memory Leak**: Find and fix the memory leak in the current implementation
